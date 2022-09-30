@@ -1,0 +1,8 @@
+Orders for {{email}}
+<div *ngFor="let order of orders">
+    <div style="border:1px solid black;">
+    <span>Order Id: {{order.orderId}}</span><br/>
+    <span>Total Amount: {{order.amount | currency }} </span>
+    </div>
+</div>
+<button [routerLink]="['/']">Back to Ordering</button>
